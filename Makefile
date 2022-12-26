@@ -8,4 +8,4 @@ APP_INCLUDES:= -I./src/vendors/GLFW -framework Cocoa -framework OpenGL -framewor
 APP_LINKERS:= -L ./src/vendors/GLFW/lib -lglfw3
 
 build:
-	clang -std=c++17 $(SRC_FILES) -o $(BUILD_DIR)/$(APP_NAME) $(C_FLAGS) $(APP_INCLUDES) $(APP_LINKERS)
+	clang++ -std=c++17 $(SRC_FILES) -o $(BUILD_DIR)/$(APP_NAME) $(C_FLAGS) $(APP_INCLUDES) $(APP_LINKERS)
